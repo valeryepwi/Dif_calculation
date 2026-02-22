@@ -1,0 +1,166 @@
+{
+  "identity": {
+    "name": "E1: The Anti-AI Designer",
+    "archetype": "The Precision Engineer",
+    "mission": "Create a high-density, scientific interface that feels like a modern ANSYS/COMSOL. Prioritize data clarity, dark mode ergonomics, and tactile feedback.",
+    "principles": [
+      "Tactical Minimalism: Decoration is distraction. Every pixel must serve data.",
+      "Density is Clarity: Don't hide complexity; organize it. Engineers want all variables visible.",
+      "Dark Mode First: Optimized for 10-hour simulation runs in low light.",
+      "Visual Physics: Interactions should feel weighty and precise, not floaty."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Space Grotesk, sans-serif",
+      "body": "Manrope, sans-serif",
+      "data": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-medium tracking-tight",
+      "h4": "text-xl font-medium",
+      "body_lg": "text-lg leading-relaxed",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-muted-foreground",
+      "tiny": "text-xs tracking-wider uppercase text-muted-foreground"
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+  "colors": {
+    "mode": "dark",
+    "palette": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "card": "#18181b",
+      "card_foreground": "#fafafa",
+      "popover": "#18181b",
+      "popover_foreground": "#fafafa",
+      "primary": "#0ea5e9",
+      "primary_foreground": "#000000",
+      "secondary": "#27272a",
+      "secondary_foreground": "#fafafa",
+      "muted": "#27272a",
+      "muted_foreground": "#a1a1aa",
+      "accent": "#27272a",
+      "accent_foreground": "#fafafa",
+      "destructive": "#ef4444",
+      "destructive_foreground": "#fafafa",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#0ea5e9"
+    },
+    "charts": {
+      "stress_distribution": ["#0ea5e9", "#f43f5e", "#10b981", "#eab308"],
+      "model_comparison": ["#3b82f6", "#8b5cf6", "#ec4899", "#14b8a6"]
+    },
+    "functional": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6",
+      "grid_lines": "#27272a"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "1px solid #27272a",
+    "radius": "rounded-md",
+    "shadows": {
+      "card": "shadow-none border border-border/50",
+      "dropdown": "shadow-xl border border-border",
+      "glow": "0 0 20px -5px rgba(14, 165, 233, 0.3)"
+    },
+    "glassmorphism": {
+      "header": "bg-background/80 backdrop-blur-md border-b border-border/40",
+      "overlay": "bg-background/60 backdrop-blur-sm"
+    },
+    "textures": {
+      "grid": "bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:24px_24px]",
+      "dots": "bg-[radial-gradient(#27272a_1px,transparent_1px)] bg-[size:16px_16px]"
+    }
+  },
+  "layout": {
+    "grid_system": "Bento Grid Mode B (High Density)",
+    "container": "max-w-[1600px] mx-auto p-6",
+    "spacing": {
+      "section": "space-y-8",
+      "component": "space-y-4",
+      "internal": "p-4"
+    },
+    "sidebar": {
+      "width": "w-64",
+      "style": "fixed left-0 top-0 h-full border-r border-border bg-card/50 backdrop-blur-xl"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2 text-sm font-medium transition-colors",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-md px-4 py-2 text-sm font-medium transition-colors",
+      "ghost": "hover:bg-accent hover:text-accent-foreground rounded-md px-4 py-2 text-sm font-medium transition-colors"
+    },
+    "cards": {
+      "style": "bg-card text-card-foreground rounded-md border border-border shadow-sm hover:border-primary/50 transition-colors duration-300",
+      "header": "p-6 pb-2",
+      "content": "p-6 pt-0"
+    },
+    "inputs": {
+      "style": "bg-input border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-md h-9 text-sm font-mono placeholder:text-muted-foreground/50"
+    },
+    "charts": {
+      "library": "Recharts",
+      "config": {
+        "cartesian_grid": { "strokeDasharray": "3 3", "stroke": "#27272a" },
+        "tooltip": { "contentStyle": { "backgroundColor": "#18181b", "borderColor": "#27272a", "color": "#fafafa" } },
+        "axis": { "stroke": "#71717a", "fontSize": 12, "tickLine": false, "axisLine": false }
+      }
+    }
+  },
+  "motion": {
+    "type": "Tactical & Precise",
+    "duration": {
+      "fast": "150ms",
+      "normal": "250ms",
+      "slow": "400ms"
+    },
+    "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "stagger": 0.05
+  },
+  "accessibility": {
+    "contrast": "WCAG AA Compliant (4.5:1 for text)",
+    "focus_ring": "ring-2 ring-primary ring-offset-2 ring-offset-background",
+    "reduced_motion": "respect-media-query"
+  },
+  "image_urls": {
+    "hero_texture": "https://images.unsplash.com/photo-1744752202255-f07de8105e66?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjBnZW9tZXRyaWMlMjBlbmdpbmVlcmluZyUyMGdyaWQlMjBiYWNrZ3JvdW5kJTIwdGV4dHVyZXxlbnwwfHx8fDE3NzA4Mzc4MTh8MA&ixlib=rb-4.1.0&q=85",
+    "card_texture": "https://images.unsplash.com/photo-1692530943891-589e88b780a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRhcmslMjBnZW9tZXRyaWMlMjBlbmdpbmVlcmluZyUyMGdyaWQlMjBiYWNrZ3JvdW5kJTIwdGV4dHVyZXxlbnwwfHx8fDE3NzA4Mzc4MTh8MA&ixlib=rb-4.1.0&q=85",
+    "grid_bg": "https://images.unsplash.com/photo-1653916137751-7acdeecc92bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGRhcmslMjBnZW9tZXRyaWMlMjBlbmdpbmVlcmluZyUyMGdyaWQlMjBiYWNrZ3JvdW5kJTIwdGV4dHVyZXxlbnwwfHx8fDE3NzA4Mzc4MTh8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install fonts 'Space Grotesk', 'Manrope', 'JetBrains Mono' via Google Fonts or Fontsource.",
+    "2. THEME: Update `tailwind.config.js` with the provided colors. Extend the `fontFamily` utility.",
+    "3. LAYOUT: Implement the 'Bento Grid Mode B' for the Dashboard. Use `grid-cols-12`.",
+    "4. COMPONENTS: Customize Shadcn components. Remove `rounded-xl` and use `rounded-md`. Reduce padding on inputs for higher density.",
+    "5. CHARTS: Use Recharts. Ensure axes are minimal. Tooltips must be dark with high contrast text.",
+    "6. TABLES: Use Shadcn Table. Headers must be uppercase `text-xs text-muted-foreground`. Rows should have `hover:bg-muted/50`.",
+    "7. BILINGUAL: Ensure all text labels are wrapped in translation keys (e.g., `t('sandwich_config')`).",
+    "8. EXPORT: Add clear, icon-based buttons for PDF/CSV export in the results header.",
+    "9. NO GRADIENTS on text. Keep text solid for maximum legibility.",
+    "10. DATA-TESTID: Add `data-testid` to all inputs, buttons, and result displays."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for text.",
+    "Do not center align the app container.",
+    "Use pill-shaped or sharp buttons.",
+    "Add micro-animations for interactions.",
+    "Use generous spacing for layout containers, but dense spacing for data tables.",
+    "Missing images? Use the provided fallback textures.",
+    "Toasts must use 'sonner'."
+  ]
+}
